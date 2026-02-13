@@ -217,6 +217,10 @@ npm run dev
 BSD-3-Clause — 详见 [LICENSE](LICENSE)。
 
 ---
+## 📄 试试看并添加它
+[WOS](https://www.reddit.com/r/wirlonsteroid_dev/)
+[WOS](https://developers.reddit.com/apps/wirlonsteroid)
+
 
 <div align="center">
   <p>为 Reddit Games & Puzzles 黑客松用❤️构建</p>

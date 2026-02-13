@@ -218,6 +218,10 @@ BSD-3-Clause — см. [LICENSE](LICENSE).
 
 ---
 
+## 📄 Попробуйте и также добавьте это
+[WOS](https://www.reddit.com/r/wirlonsteroid_dev/)
+[WOS](https://developers.reddit.com/apps/wirlonsteroid)
+
 <div align="center">
   <p>Создано с ❤️ для хакатона Reddit Games & Puzzles</p>
 </div>

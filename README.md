@@ -45,6 +45,10 @@ npm run dev     # launch Devvit playtest
 BSD-3-Clause — see [LICENSE](LICENSE).
 
 ---
+## 📄 Try it and also add it 
+[WOS](https://www.reddit.com/r/wirlonsteroid_dev/)
+[WOS](https://developers.reddit.com/apps/wirlonsteroid)
+
 
 <div align="center">
   <p>Built with ❤️ for the Reddit Games & Puzzles Hackathon</p>

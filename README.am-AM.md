@@ -194,6 +194,10 @@ npm run dev
 ይህ ፕሮጀክት በBSD-3-Clause ፈቃድ ስር ፈቃድ ተሰጥቶታል — [LICENSE](LICENSE) ይመልከቱ።
 
 ---
+## 📄 ሞክር እና ደግሞ ጨምር
+[WOS](https://www.reddit.com/r/wirlonsteroid_dev/)
+[WOS](https://developers.reddit.com/apps/wirlonsteroid)
+
 
 <div align="center">
   <p>ለReddit Games & Puzzles ሃካቶን በ❤️ ተሰርቷል</p>
