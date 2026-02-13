@@ -316,6 +316,7 @@ function restartGame(): void {
   if (gameOverEl) gameOverEl.style.display = 'none';
   if (publishOverlay) publishOverlay.style.display = 'none';
   if (publishSuccessEl) publishSuccessEl.style.display = 'none';
+  if (commentSuccessEl) commentSuccessEl.style.display = 'none';
   startGame();
 }
 

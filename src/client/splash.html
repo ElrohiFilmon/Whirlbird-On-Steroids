@@ -65,6 +65,9 @@
         <button class="post-button" id="post-button" style="display:none">
           <span class="btn-text">📮 Post Score to Community</span>
         </button>
+        <button class="comment-button" id="comment-button" style="display:none">
+          <span class="btn-text">💬 Comment Score on Post</span>
+        </button>
       </div>
     </div>
 
@@ -95,6 +98,16 @@
         <p class="pub-success-desc">Your score is now live for others to see!</p>
         <button class="pub-btn pub-view" id="pub-view">View My Post</button>
         <button class="pub-btn pub-done" id="pub-done">Done</button>
+      </div>
+    </div>
+
+    <!-- Comment success overlay -->
+    <div class="publish-overlay" id="comment-success" style="display:none">
+      <div class="pub-card pub-success-card">
+        <div class="pub-check">&#10004;</div>
+        <h2 class="pub-success-title">💬 Comment Posted!</h2>
+        <p class="pub-success-desc">Your score has been posted as a comment under this game post.</p>
+        <button class="pub-btn pub-done" id="cmt-done">Done</button>
       </div>
     </div>
 
