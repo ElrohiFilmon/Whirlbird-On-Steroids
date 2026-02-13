@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>Whirlbird 3D</title>
+  </head>
+  <body>
+    <!-- Loading screen -->
+    <div class="game-loading" id="game-loading">
+      <div class="load-wrap">
+        <div class="load-balloon">🎈</div>
+        <div class="load-bar-track">
+          <div class="load-bar-fill" id="load-bar-fill"></div>
+        </div>
+        <p class="load-label" id="load-label">Loading assets...</p>
+      </div>
+    </div>
+
+    <!-- HUD -->
+    <div class="hud" id="hud">
+      <div class="hud-row">
+        <div class="hud-label">Score</div>
+        <div class="hud-value" id="score">0</div>
+      </div>
+      <div class="hud-row">
+        <div class="hud-label">Best</div>
+        <div class="hud-value" id="best">0</div>
+      </div>
+      <div class="hud-message" id="message">Tap or press Space to launch</div>
+    </div>
+
+    <!-- Game-over overlay -->
+    <div class="game-over-overlay" id="game-over-overlay" style="display:none">
+      <div class="go-card">
+        <h2 class="go-title">Game Over</h2>
+        <div class="go-score-row">
+          <span class="go-label">Score</span>
+          <span class="go-value" id="go-score">0</span>
+        </div>
+        <div class="go-score-row">
+          <span class="go-label">Best</span>
+          <span class="go-value go-best" id="go-best">0</span>
+        </div>
+        <div class="go-new-best" id="go-new-best" style="display:none">🎉 New Best!</div>
+        <button class="go-publish" id="go-publish">📮 Post Score</button>
+        <button class="go-comment" id="go-comment">💬 Comment Score</button>
+        <button class="go-retry" id="go-retry">▶ Play Again</button>
+      </div>
+    </div>
+
+    <!-- Publish confirmation modal -->
+    <div class="publish-overlay" id="publish-overlay" style="display:none">
+      <div class="pub-card">
+        <div class="pub-header">
+          <h2 class="pub-title">Ready to Publish?</h2>
+          <button class="pub-close" id="pub-close">&times;</button>
+        </div>
+        <div class="pub-preview">
+          <span class="pub-score-label">Your Score</span>
+          <span class="pub-score-value" id="pub-score">0</span>
+        </div>
+        <p class="pub-desc">Your score will be published as a post to the subreddit for others to see.</p>
+        <div class="pub-actions">
+          <button class="pub-btn pub-cancel" id="pub-cancel">Cancel</button>
+          <button class="pub-btn pub-confirm" id="pub-confirm">&#10004; Yes, Publish</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Published success overlay -->
+    <div class="publish-overlay" id="publish-success" style="display:none">
+      <div class="pub-card pub-success-card">
+        <div class="pub-check">&#10004;</div>
+        <h2 class="pub-success-title">&#127881; Published Successfully!</h2>
+        <p class="pub-success-desc">Your score has been published and is now live for others to see!</p>
+        <button class="pub-btn pub-view" id="pub-view">View My Post</button>
+        <button class="pub-btn pub-done" id="pub-done">Done</button>
+      </div>
+    </div>
+
+    <!-- Comment success overlay -->
+    <div class="publish-overlay" id="comment-success" style="display:none">
+      <div class="pub-card pub-success-card">
+        <div class="pub-check">&#10004;</div>
+        <h2 class="pub-success-title">💬 Comment Posted!</h2>
+        <p class="pub-success-desc">Your score has been posted as a comment under this game post.</p>
+        <button class="pub-btn pub-done" id="cmt-done">Done</button>
+      </div>
+    </div>
+
+    <div class="controls-hint" id="controls">WASD / Arrows to steer &bull; Drag to move &bull; Fly THROUGH arches!</div>
+
+    <!-- Toast notification (replaces alert) -->
+    <div class="toast" id="toast"></div>
+
+    <script type="module" src="./game.ts"></script>
+  </body>
+</html>

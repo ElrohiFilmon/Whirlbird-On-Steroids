@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="splash.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height, user-scalable=0"
+    />
+    <title>Whirlbird on Steroids</title>
+  </head>
+  <body class="app">
+    <!-- Animated stars -->
+    <div class="stars"></div>
+    <div class="stars stars-2"></div>
+
+    <!-- Loading spinner (shown while fetching init data) -->
+    <div class="loading-overlay" id="loading-overlay">
+      <div class="spinner"></div>
+      <p class="loading-text">Launching...</p>
+    </div>
+
+    <!-- Main content (hidden until loaded) -->
+    <div class="content" id="main-content" style="display:none">
+      <!-- Title card -->
+      <div class="card title-card">
+        <div class="balloon-icon">🎈</div>
+        <h1 class="game-title">Whirlbird<span class="title-accent"> On Steroids</span></h1>
+        <p class="tagline">Navigate the space corridor. Fly through every arch!</p>
+      </div>
+
+      <!-- Leaderboard card -->
+      <div class="card leaderboard-card">
+        <h2 class="card-heading">🏆 Leaderboard</h2>
+        <div class="lb-list" id="lb-list">
+          <div class="lb-empty">No scores yet — be the first!</div>
+        </div>
+      </div>
+
+      <!-- Personal stats card -->
+      <div class="card stats-card">
+        <p class="greeting" id="greeting">Welcome, Pilot!</p>
+        <div class="stats-row">
+          <div class="stat">
+            <span class="stat-label">Your Best</span>
+            <span class="stat-value" id="best-score">0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- How to play -->
+      <div class="card how-card">
+        <h2 class="card-heading">How to Play</h2>
+        <div class="instruction"><span class="key-badge">W A S D</span> Steer your balloon</div>
+        <div class="instruction"><span class="key-badge">DRAG</span> Touch / mouse steer</div>
+        <div class="instruction"><span class="instr-icon">🏗️</span> Fly <strong>through</strong> arches for points</div>
+        <div class="instruction"><span class="instr-icon">🚫</span> Avoid rings &amp; trees!</div>
+      </div>
+
+      <!-- Play button -->
+      <div class="start-area">
+        <button class="start-button" id="start-button">
+          <span class="btn-text">▶ PLAY</span>
+        </button>
+        <button class="post-button" id="post-button" style="display:none">
+          <span class="btn-text">📮 Post Score to Community</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Publish confirmation modal -->
+    <div class="publish-overlay" id="publish-overlay" style="display:none">
+      <div class="pub-card">
+        <div class="pub-header">
+          <h2 class="pub-title">Post to Community?</h2>
+          <button class="pub-close" id="pub-close">&times;</button>
+        </div>
+        <div class="pub-preview">
+          <span class="pub-score-label">Your Best Score</span>
+          <span class="pub-score-value" id="pub-score">0</span>
+        </div>
+        <p class="pub-desc">Your best score will be published as a post to the subreddit for others to see.</p>
+        <div class="pub-actions">
+          <button class="pub-btn pub-cancel" id="pub-cancel">Cancel</button>
+          <button class="pub-btn pub-confirm" id="pub-confirm">&#10004; Yes, Publish</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Published success overlay -->
+    <div class="publish-overlay" id="publish-success" style="display:none">
+      <div class="pub-card pub-success-card">
+        <div class="pub-check">&#10004;</div>
+        <h2 class="pub-success-title">&#127881; Published!</h2>
+        <p class="pub-success-desc">Your score is now live for others to see!</p>
+        <button class="pub-btn pub-view" id="pub-view">View My Post</button>
+        <button class="pub-btn pub-done" id="pub-done">Done</button>
+      </div>
+    </div>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast"></div>
+
+    <script type="module" src="splash.ts" defer></script>
+  </body>
+</html>
